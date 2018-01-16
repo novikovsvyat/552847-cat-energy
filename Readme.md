@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Святослав Новиков](https://up.htmlacademy.ru/adaptive/13/user/552847).
-* Наставник: [Екатерина Комнатная].
+* Наставник: [Екатерина Комнатная](https://up.htmlacademy.ru/adaptive/13/user/215761).
 
 ---
 
