@@ -7,10 +7,12 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__logo-link" href="index.html">
-          <img class="main-nav__logo-image" src="http://via.placeholder.com/33x38" width="33" height="38" alt="Логотип Кэт энерджи">
+        <a class="main-nav__link main-nav-logo" href="index.html">
+          <img class="main-nav-logo__image" src="http://via.placeholder.com/33x38" width="33" height="38" alt="Логотип Кэт энерджи">
         </a>
-        <img class="main-nav__logo-text" src="http://via.placeholder.com/100x18" width="100" height="18" alt="Кэт энерджи">
+        <a class="main-nav__link main-nav-logo" href="index.html">
+          <img class="main-nav-logo__text" src="http://via.placeholder.com/100x18" width="100" height="18" alt="Кэт энерджи">
+        </a>
         <button class="main-nav__toogle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -29,10 +31,10 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Кэт энерджи - Программа</h1>
+      <h1 class="page-main__title">Подбор программы</h1>
 
       <section class="picking">
-        <h2 class="picking__title">Подбор программы</h2>
+        <h2 class="picking__title">Анкета</h2>
         <p class="picking__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="picking__form program-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="program-form__fieldset">
@@ -69,11 +71,11 @@
             <legend class="program-form__legend">Контактные данные (владельца кота)</legend>
             <p class="program-form__label-input">
               <label class="program-form__label" for="owner-email">Email:<sup>*</sup></label>
-              <input class="program-form__input" id="owner-email" type="text" name="owner-email">
+              <input class="program-form__input" id="owner-email" type="email" name="owner-email">
             </p>
             <p class="program-form__label-input">
               <label class="program-form__label" for="owner-phone">Телефон:<sup>*</sup></label>
-              <input class="program-form__input" id="owner-phone" type="text" name="owner-phone">
+              <input class="program-form__input" id="owner-phone" type="tel" name="owner-phone">
             </p>
           </fieldset>
           <fieldset class="program-form__fieldset">
