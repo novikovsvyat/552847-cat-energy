@@ -1,0 +1,117 @@
+.example {
+  background-color: #f2f2f2;
+  padding-top: 17px;
+  padding-bottom: 38px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  margin: 0;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.example__def-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.example__def-item {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 15px 30px;
+  width: 46%;
+  text-align: center;
+}
+
+.example__def-term {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.example__def-data {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  width: 80px;
+  margin: auto;
+  background-color: #f2f2f2;
+}
+
+.example__cost {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #111111;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.example__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.example__list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.example__item {
+  display: none;
+}
+
+.example__label {
+  &--before,
+  &--after {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+}
+
+.example__toogle {
+  &--before:checked ~ .example__list .example__item:nth-child(1),
+  &--after:checked ~ .example__list .example__item:nth-child(2){
+    display: block;
+  }
+}
