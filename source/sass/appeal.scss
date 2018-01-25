@@ -1,0 +1,35 @@
+.appeal {
+  background-color: #ffffff;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  text-align: center;
+}
+
+.appeal__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: white;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.appeal__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 28px;
+}
