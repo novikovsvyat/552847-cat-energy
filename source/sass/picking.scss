@@ -4,7 +4,7 @@
   line-height: 18px;
   color: #111111;
   margin: 0;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 16px;
   padding-left: 6.25%;
@@ -19,7 +19,8 @@
   line-height: 16px;
   color: #444444;
   margin: 0;
-  font-weight: normal;
+  font-weight: 400;
+  margin-bottom: 32px;
 }
 
 .picking-form__note-sup {
@@ -27,5 +28,50 @@
   font-size: 14px;
   line-height: 16px;
   color: #444444;
-  font-weight: normal;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .picking {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .picking__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 26px;
+    padding-left: 40px;
+    padding-right: 0;
+    width: 390px;
+    margin-top: -5px;
+  }
+
+  .picking-form__note {
+    font-size: 16px;
+    position: absolute;
+    right: 174px;
+    bottom: 20px;
+    margin: 0;
+  }
+
+  .picking-form__note-sup {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .picking {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .picking__text {
+    padding-left: 0;
+  }
+
+  .picking-form__note {
+    right: 430px;
+  }
 }

@@ -1,4 +1,42 @@
-.main-nav__head-wrapper {
+.main-nav__head {
+  position: relative;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
+  padding: 0 6.25%;
+  height: 66px;
+}
+
+.main-nav__toogle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(6.25% + 46px);
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: flex-start;
+  }
+
+  .main-nav__head {
+    border-bottom: none;
+    height: auto;
+    padding: 0;
+    text-align: left;
+    padding-top: 21px;/*временно*/
+  }
+
+  .main-nav__toogle {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-nav {
+    padding: 0 40px;
+  }
 }

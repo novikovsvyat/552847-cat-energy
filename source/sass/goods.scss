@@ -1,3 +1,7 @@
+.goods {
+  padding-top: 3px;
+}
+
 .goods__list {
   margin: 0;
   padding: 0;
@@ -5,13 +9,24 @@
   border: 1px solid #ededed;
 }
 
-.goods__item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
-  border-bottom: 1px solid #ededed;
-  &:last-child {
-    border-bottom: 0;
+@media (min-width: 768px) {
+  .goods {
+    padding-top: 0;
+  }
+
+  .goods__list {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .goods__list {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

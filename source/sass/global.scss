@@ -1,12 +1,10 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -18,6 +16,7 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+  min-width: 320px;
 }
 
 a {
@@ -27,4 +26,11 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 1300px) {
+  body {
+    width: 1300px;
+    margin: 0 auto;
+  }
 }

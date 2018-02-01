@@ -1,14 +1,17 @@
 .appeal {
-  background-color: #ffffff;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
+  position: relative;
+  z-index: 1;
   padding-top: 28px;
   padding-bottom: 22px;
   padding-left: 6.25%;
   padding-right: 6.25%;
-  text-align: center;
+  background-color: #ffffff;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 305px;
+  margin-bottom: 197px;
 }
 
 .appeal__title {
@@ -16,8 +19,9 @@
   font-size: 36px;
   line-height: 36px;
   color: white;
-  margin: 0;
-  font-weight: normal;
+  width: 280px;
+  margin: auto;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -29,7 +33,95 @@
   color: white;
   text-transform: uppercase;
   margin: 0;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 302px;
+}
+
+.appeal__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 166px;
+  margin: auto;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .appeal {
+    padding-top: 58px;
+    padding-bottom: 336px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: none;
+    height: auto;
+  }
+
+  .appeal__wrapper {
+    padding-left: 90px;
+  }
+
+  .appeal__title {
+    width: 450px;
+    margin: 0;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .appeal__slogan {
+    width: 450px;
+    margin-bottom: 44px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .appeal__button {
+    width: 245px;
+    margin: 0;
+  }
+
+  .appeal__image {
+    position: absolute;
+    left: 80px;
+    right: 0;
+    top: 258px;
+    margin: auto;
+    width: 630px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .appeal {
+    height: 583px;
+    padding-top: 109px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 80px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-size: contain;
+    background-position-x: right;
+  }
+
+  .appeal__wrapper {
+    padding-left: 80px;
+  }
+
+  .appeal__slogan {
+    margin-bottom: 53px;
+  }
+
+  .appeal__image {
+    position: absolute;
+    left: 270px;
+    right: 0;
+    top: 24px;
+    margin: auto;
+    width: 520px;
+  }
 }
