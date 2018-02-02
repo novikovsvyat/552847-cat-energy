@@ -5,10 +5,10 @@
 }
 
 .extra-goods__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 24px;
   line-height: 24px;
-  color: #111111;
+  color: $black-txt-clr;
   margin: 0;
   font-weight: 400;
   margin-bottom: 34px;
@@ -18,25 +18,25 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid $gray-brdr-clr;
+  border-bottom: 1px solid $gray-brdr-clr;
   margin-bottom: 39px;
 }
 
 .extra-goods__item {
   padding-top: 13px;
   padding-bottom: 17px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $gray-brdr-clr;
 
   &:last-child {
     border-bottom: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .extra-goods {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
     padding-top: 32px;
   }
 
@@ -48,16 +48,16 @@
   }
 
   .extra-goods__list {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $gray-brdr-clr;
     margin-bottom: 69px;
   }
 
   .extra-goods__item {
     padding-top: 25px;
     padding-bottom: 27px;
-    padding-left: 37px;
-    padding-right: 37px;
-    border-bottom: 1px solid #cdcdcd;
+    padding-left: 37px / 708px * 100%;
+    padding-right: 37px / 708px * 100%;
+    border-bottom: 1px solid $gray-brdr-clr;
 
     &:last-child {
       border-bottom: 0;
@@ -69,21 +69,28 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .extra-goods {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0;
     padding-top: 39px;
   }
 
   .extra-goods__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 1300px;
+    margin: auto;
     margin-bottom: 86px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .extra-goods__title {
-    padding-left: 0;
+    width: 1300px;
+    margin: auto;
+    margin-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .extra-goods__list {

@@ -1,8 +1,8 @@
 .picking__text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 14px;
   line-height: 18px;
-  color: #111111;
+  color: $black-txt-clr;
   margin: 0;
   font-weight: 400;
   text-transform: uppercase;
@@ -14,35 +14,35 @@
 .picking-form__note {
   display: block;
   text-align: center;
-  font-family: "Arial", sans-serif;
+  font-family: $arial-fnt;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $gray-txt-clr;
   margin: 0;
   font-weight: 400;
   margin-bottom: 32px;
 }
 
 .picking-form__note-sup {
-  font-family: "Arial", sans-serif;
+  font-family: $arial-fnt;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $gray-txt-clr;
   font-weight: 400;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .picking {
     position: relative;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
   }
 
   .picking__text {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 26px;
-    padding-left: 40px;
+    padding-left: 40px / 708px * 100%;
     padding-right: 0;
     width: 390px;
     margin-top: -5px;
@@ -61,14 +61,18 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .picking {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .picking__text {
-    padding-left: 0;
+    width: 1300px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: -5px;
   }
 
   .picking-form__note {

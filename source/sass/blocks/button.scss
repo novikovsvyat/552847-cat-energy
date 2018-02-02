@@ -2,23 +2,23 @@
   margin: auto;
   padding: 10px;
   display: block;
-  background-color: #68b738;
-  font-family: "Oswald", "Arial", sans-serif;
+  background-color: $green-bg-clr;
+  font-family: $oswald-fnt;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $white-bg-clr;
   text-transform: uppercase;
   text-align: center;
   border: none;
   width: 100%;
 
   &--gray {
-    background-color: #f2f2f2;
-    color: #222222;
+    background-color: $gray-bg-clr;
+    color: $black-txt-clr;
   }
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .button {
     font-size: 20px;
     line-height: 20px;

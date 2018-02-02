@@ -4,7 +4,7 @@
   position: relative;
   align-items: flex-start;
   justify-content: center;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $gray-t-brdr-clr;
 
   &:last-child {
     border-bottom: 0;
@@ -15,10 +15,10 @@
 }
 
 .goods-card__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $black-txt-clr;
   margin: 0;
   font-weight: 400;
   text-transform: uppercase;
@@ -27,14 +27,14 @@
 }
 
 .goods-card__table {
-  font-family: "Arial", sans-serif;
+  font-family: $arial-fnt;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $gray-txt-clr;
   margin: 0;
   font-weight: 400;
-  width: 140px;
   border-collapse: collapse;
+  width: 100%;
 }
 
 .goods-card__data {
@@ -48,34 +48,31 @@
 
 .goods-card__image-link {
   display: block;
+  width: 50%;
 }
 
 .goods-card__image {
   display: block;
-  margin-left: auto;
+  margin: auto;
 }
 
 .goods-card__wrapper {
   padding-top: 21px;
   margin-bottom: 21px;
+  width: 50%;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .goods-card {
-    width: 324px;
+    width: 324px / 708px * 100%;
     margin-top: 105px;
-    margin-right: 8%;
     margin-bottom: 35px;
     padding-top: 163px;
     padding-bottom: 40px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 38px / 708px * 100%;
+    padding-right: 38px / 708px * 100%;
     border-bottom: 0;
-    background-color: #f2f2f2;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
+    background-color: $gray-bg-clr;
   }
 
   .goods-card__image-link {
@@ -97,7 +94,7 @@
   .goods-card__title {
     font-size: 20px;
     line-height: 20px;
-    color: #111111;
+    color: $black-txt-clr;
     width: 150px;
     text-align: center;
     margin: auto;
@@ -112,7 +109,7 @@
   }
 
   .goods-card__row {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $gray-brdr-clr;
   }
 
   .goods-card__data {
@@ -127,7 +124,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .goods-card {
     width: 245px;
     margin-top: 105px;
@@ -137,7 +134,7 @@
     padding-left: 38px;
     padding-right: 38px;
     border-bottom: 0;
-    background-color: #f2f2f2;
+    background-color: $gray-bg-clr;
 
     &:nth-child(1n+0) {
       margin-right: auto;

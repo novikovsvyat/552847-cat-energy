@@ -1,7 +1,7 @@
 .meal-plans {
   padding-left: 6.25%;
   padding-right: 6.25%;
-  background-color: #ffffff;
+  background-color: $white-bg-clr;
 }
 
 .meal-plans__list {
@@ -10,17 +10,19 @@
   list-style: none;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .meal-plans {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .meal-plans {
     padding-left: 40px;
     padding-right: 40px;
+    margin: 0 auto;
+    width: 1300px;
   }
 
   .meal-plans__list {

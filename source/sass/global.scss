@@ -11,11 +11,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #444444;
   min-width: 320px;
 }
 
@@ -26,11 +21,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-@media (min-width: 1300px) {
-  body {
-    width: 1300px;
-    margin: 0 auto;
-  }
 }

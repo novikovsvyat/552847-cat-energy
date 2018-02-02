@@ -5,10 +5,10 @@
 }
 
 .goods-more-card__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $black-txt-clr;
   margin: 0;
   font-weight: 400;
   text-transform: uppercase;
@@ -17,10 +17,10 @@
 }
 
 .goods-more-card__text {
-  font-family: "Arial", sans-serif;
+  font-family: $arial-fnt;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $gray-txt-clr;
   margin: 0;
   font-weight: 400;
   text-align: center;
@@ -31,16 +31,16 @@
   margin-bottom: 24px;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .goods-more-card {
-    border: 1px solid #e6e6e6;
-    width: 324px;
+    border: 1px solid $gray-t-brdr-clr;
+    width: 324px / 708px * 100%;
     margin-top: 105px;
     margin-bottom: 35px;
     padding-top: 163px;
     padding-bottom: 38px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 38px / 708px * 100%;
+    padding-right: 38px / 708px * 100%;
   }
 
   .goods-more-card__title {
@@ -67,15 +67,17 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .goods-more-card {
     width: 245px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   .goods-more-card__title {
     font-size: 20px;
     line-height: 20px;
-    width: 160px;
+    width: auto;
     margin: auto;
     margin-bottom: 25px;
   }
@@ -83,7 +85,7 @@
   .goods-more-card__text {
     font-size: 16px;
     line-height: 19px;
-    width: 200px;
+    width: auto;
     margin: auto;
     margin-bottom: 85px;
   }

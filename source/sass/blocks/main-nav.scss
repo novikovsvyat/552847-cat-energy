@@ -1,7 +1,7 @@
 .main-nav__head {
   position: relative;
   text-align: center;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $gray-t-brdr-clr;
   padding: 0 6.25%;
   height: 66px;
 }
@@ -12,13 +12,14 @@
   bottom: 0;
   right: 0;
   width: calc(6.25% + 46px);
+  height: 100%;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 $tablet-external-padding;
     align-items: flex-start;
   }
 
@@ -35,7 +36,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .main-nav {
     padding: 0 40px;
   }

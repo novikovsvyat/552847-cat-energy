@@ -5,7 +5,7 @@
   padding-bottom: 22px;
   padding-left: 6.25%;
   padding-right: 6.25%;
-  background-color: #ffffff;
+  background-color: $white-bg-clr;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .appeal__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 36px;
   line-height: 36px;
   color: white;
@@ -27,7 +27,7 @@
 }
 
 .appeal__slogan {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 14px;
   line-height: 14px;
   color: white;
@@ -47,12 +47,12 @@
   z-index: -1;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .appeal {
     padding-top: 58px;
     padding-bottom: 336px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
     background-image: none;
     height: auto;
   }
@@ -67,7 +67,7 @@
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
-    color: #111111;
+    color: $black-txt-clr;
     text-align: left;
   }
 
@@ -76,7 +76,7 @@
     margin-bottom: 44px;
     font-size: 20px;
     line-height: 20px;
-    color: #111111;
+    color: $black-txt-clr;
     text-align: left;
   }
 
@@ -95,13 +95,13 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .appeal {
     height: 583px;
     padding-top: 109px;
     padding-bottom: 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 0;
+    padding-left: 0;
     margin-bottom: 80px;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-size: contain;
@@ -109,7 +109,9 @@
   }
 
   .appeal__wrapper {
-    padding-left: 80px;
+    padding-left: 120px;
+    margin: 0 auto;
+    width: 1300px;
   }
 
   .appeal__slogan {

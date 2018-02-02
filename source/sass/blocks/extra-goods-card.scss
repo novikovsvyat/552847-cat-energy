@@ -1,8 +1,8 @@
 .extra-goods-card__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 16px;
   line-height: 16px;
-  color: #222222;
+  color: $black-txt-clr;
   margin: 0;
   font-weight: 400;
   text-transform: uppercase;
@@ -10,10 +10,10 @@
 }
 
 .extra-goods-card__table {
-  font-family: "Arial", sans-serif;
+  font-family: $arial-fnt;
   font-size: 14px;
   line-height: 14px;
-  color: #444444;
+  color: $gray-txt-clr;
   margin: 0;
   font-weight: 40;
   margin-bottom: 15px;
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .extra-goods-card__title {
     font-size: 20px;
     line-height: 20px;
@@ -38,7 +38,6 @@
   }
 
   .extra-goods-card__table {
-    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
     width: auto;
@@ -61,7 +60,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .extra-goods-card__title {
     margin-bottom: 0;
     width: 285px;

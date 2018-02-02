@@ -6,10 +6,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  border: 1px solid #ededed;
+  border: 1px solid $gray-t-brdr-clr;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .goods {
     padding-top: 0;
   }
@@ -19,14 +19,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .goods__list {
     padding-left: 40px;
     padding-right: 40px;
+    width: 1300px;
+    margin: 0 auto;
   }
 }

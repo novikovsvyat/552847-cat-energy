@@ -11,15 +11,15 @@
 .gift__text {
   width: 200px;
   margin: 0 auto;
-  font-family: "Arial", sans-serif;
+  font-family: $arial-fnt;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
   text-align: center;
-  color: #ffffff;
+  color: $white-txt-clr;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .gift__link {
     display: block;
     padding-top: 72px;
@@ -36,16 +36,13 @@
     width: 180px;
     margin: auto;
     margin-left: 60%;
-    font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 19px;
-    font-weight: normal;
-    color: #ffffff;
     text-align: left;
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .gift__link {
     display: block;
     padding-top: 187px;

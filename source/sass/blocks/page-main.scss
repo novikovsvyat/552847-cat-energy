@@ -7,10 +7,10 @@
 }
 
 .page-main__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald-fnt;
   font-size: 36px;
   line-height: 60px;
-  color: #111111;
+  color: $black-txt-clr;
   margin: 0;
   margin-bottom: 25px;
   padding-left: 6.25%;
@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .page-main {
     padding-top: 58px;
 
@@ -31,12 +31,12 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
   }
 }
 
-@media (min-width: 1300px) {
+@media ($desktop-width) {
   .page-main {
     padding-top: 75px;
 
@@ -48,8 +48,10 @@
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
+    margin: auto;
     margin-bottom: 60px;
     padding-left: 40px;
     padding-right: 40px;
+    width: 1300px;
   }
 }

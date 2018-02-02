@@ -20,7 +20,7 @@
   margin: auto;
 }
 
-@media (min-width: 768px) {
+@media ($tablet-width) {
   .main-nav-logo {
     position: relative;
     padding-top: 0;
