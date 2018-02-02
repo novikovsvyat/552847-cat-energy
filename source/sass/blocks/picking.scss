@@ -1,0 +1,81 @@
+.picking__text {
+  font-family: $oswald-fnt;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black-txt-clr;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.picking-form__note {
+  display: block;
+  text-align: center;
+  font-family: $arial-fnt;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray-txt-clr;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.picking-form__note-sup {
+  font-family: $arial-fnt;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray-txt-clr;
+  font-weight: 400;
+}
+
+@media ($tablet-width) {
+  .picking {
+    position: relative;
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
+  }
+
+  .picking__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 26px;
+    padding-left: 40px / 708px * 100%;
+    padding-right: 0;
+    width: 390px;
+    margin-top: -5px;
+  }
+
+  .picking-form__note {
+    font-size: 16px;
+    position: absolute;
+    right: 174px;
+    bottom: 20px;
+    margin: 0;
+  }
+
+  .picking-form__note-sup {
+    font-size: 16px;
+  }
+}
+
+@media ($desktop-width) {
+  .picking {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .picking__text {
+    width: 1300px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: -5px;
+  }
+
+  .picking-form__note {
+    right: 430px;
+  }
+}

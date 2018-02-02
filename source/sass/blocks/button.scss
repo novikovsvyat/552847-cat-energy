@@ -1,0 +1,27 @@
+.button {
+  margin: auto;
+  padding: 10px;
+  display: block;
+  background-color: $green-bg-clr;
+  font-family: $oswald-fnt;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white-bg-clr;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  width: 100%;
+
+  &--gray {
+    background-color: $gray-bg-clr;
+    color: $black-txt-clr;
+  }
+}
+
+@media ($tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px;
+  }
+}

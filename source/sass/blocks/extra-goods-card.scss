@@ -1,0 +1,98 @@
+.extra-goods-card__title {
+  font-family: $oswald-fnt;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black-txt-clr;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.extra-goods-card__table {
+  font-family: $arial-fnt;
+  font-size: 14px;
+  line-height: 14px;
+  color: $gray-txt-clr;
+  margin: 0;
+  font-weight: 40;
+  margin-bottom: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.extra-goods-card__data {
+  padding: 0;
+  text-align: left;
+
+  &:nth-child(2) {
+    text-align: right;
+  }
+}
+
+@media ($tablet-width) {
+  .extra-goods-card__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 26px;
+  }
+
+  .extra-goods-card__table {
+    font-size: 16px;
+    line-height: 20px;
+    width: auto;
+    text-align: right;
+  }
+
+  .extra-goods-card__data {
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &:nth-child(2n) {
+      width: 94px;
+    }
+  }
+
+  .extra-goods-card__button {
+    padding: 10px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+}
+
+@media ($desktop-width) {
+  .extra-goods-card__title {
+    margin-bottom: 0;
+    width: 285px;
+    margin-right: 40px;
+  }
+
+  .extra-goods-card__button {
+    width: 245px;
+    margin: 0;
+  }
+
+  .extra-goods-card__table {
+    margin-bottom: 0;
+    width: auto;
+    margin-right: 30px;
+  }
+
+  .extra-goods-card__data {
+    padding-top: 14px;
+    padding-bottom: 6px;
+
+    &:nth-child(1n+0) {
+      width: auto;
+      text-align: left;
+    }
+
+    &:last-child {
+      width: 50px;
+    }
+
+    &:first-child {
+      width: 245px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.main-nav__head {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid $gray-t-brdr-clr;
+  padding: 0 6.25%;
+  height: 66px;
+}
+
+.main-nav__toogle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: calc(6.25% + 46px);
+  height: 100%;
+}
+
+@media ($tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $tablet-external-padding;
+    align-items: flex-start;
+  }
+
+  .main-nav__head {
+    border-bottom: none;
+    height: auto;
+    padding: 0;
+    text-align: left;
+    padding-top: 21px;/*временно*/
+  }
+
+  .main-nav__toogle {
+    display: none;
+  }
+}
+
+@media ($desktop-width) {
+  .main-nav {
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,32 @@
+.meal-plans {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  background-color: $white-bg-clr;
+}
+
+.meal-plans__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media ($tablet-width) {
+  .meal-plans {
+    padding-left: $tablet-external-padding;
+    padding-right: $tablet-external-padding;
+  }
+}
+
+@media ($desktop-width) {
+  .meal-plans {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    width: 1300px;
+  }
+
+  .meal-plans__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
