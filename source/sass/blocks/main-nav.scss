@@ -2,7 +2,7 @@
   position: relative;
   text-align: center;
   border-bottom: 1px solid $gray-t-brdr-clr;
-  padding: 0 6.25%;
+  padding: 0;
   height: 66px;
 }
 
@@ -11,15 +11,59 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: calc(6.25% + 46px);
+  width: calc(12.5% + 24px);
   height: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.main-nav--hide .main-nav__toogle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+}
+
+.main-nav--show .main-nav__toogle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media ($tablet-width) {
   .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 $tablet-external-padding;
+    padding: 0 30px / 768px * 100%;
     align-items: flex-start;
   }
 

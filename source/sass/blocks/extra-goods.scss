@@ -1,17 +1,39 @@
 .extra-goods {
-  padding-left: 6.25%;
-  padding-right: 6.25%;
   padding-top: 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 42px;
+    left: 0;
+    margin: 0 auto;
+    background-color: $green-bg-clr;
+    z-index: -1;
+  }
 }
 
 .extra-goods__title {
-  font-family: $oswald-fnt;
-  font-size: 24px;
-  line-height: 24px;
-  color: $black-txt-clr;
   margin: 0;
-  font-weight: 400;
   margin-bottom: 34px;
+  margin-right: auto;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+.extra-goods__wrapper {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
 }
 
 .extra-goods__list {
@@ -35,16 +57,25 @@
 
 @media ($tablet-width) {
   .extra-goods {
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
     padding-top: 32px;
+
+    &::before {
+      top: 54px;
+    }
+  }
+
+  .extra-goods__wrapper {
+    padding-left: 30px / 768px * 100%;
+    padding-right: 30px / 768px * 100%;
   }
 
   .extra-goods__title {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
-    padding-left: 37px;
+    margin-left: 30px / 768px * 100%;
+    padding-left: 37px / 708px * 100%;
+    padding-right: 37px / 708px * 100%;
   }
 
   .extra-goods__list {
@@ -71,8 +102,11 @@
 
 @media ($desktop-width) {
   .extra-goods {
-    padding: 0;
     padding-top: 39px;
+
+    &::before {
+      top: 61px;
+    }
   }
 
   .extra-goods__wrapper {
@@ -86,9 +120,8 @@
   }
 
   .extra-goods__title {
-    width: 1300px;
-    margin: auto;
-    margin-bottom: 80px;
+    margin-left: calc((100vw - 1300px) / 2);
+    margin-right: auto;
     padding-left: 40px;
     padding-right: 40px;
   }

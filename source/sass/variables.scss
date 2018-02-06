@@ -3,6 +3,7 @@ $arial-fnt: "Arial", sans-serif;
 
 $desktop-width: "min-width: 1300px";
 $tablet-width: "min-width: 768px";
+$max-mobile-width: "max-width: 767px";
 
 $black-txt-clr: #111111;
 $black-l-txt-clr: #222222;
@@ -11,11 +12,12 @@ $white-txt-clr: #ffffff;
 
 $white-bg-clr: #ffffff;
 $gray-bg-clr: #f2f2f2;
+$gray-h-bg-clr: rgba(#cdcdcd, 0.5%);
 $green-bg-clr: #68b738;
-$gray-brdr-clr: #cdcdcd;
+$green-h-bg-clr: #5eaa2f;
+$black-bg-clr: #111111;
 
+$gray-brdr-clr: #cdcdcd;
 $green-brdr-clr: #68b738;
 $gray-t-brdr-clr: rgba(#cdcdcd, 0.5%);
 $black-t-brdr-clr: rgba(#000000, 0.1%);
-
-$tablet-external-padding: 30px / 768px * 100%;

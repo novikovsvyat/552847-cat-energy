@@ -25,15 +25,26 @@
 }
 
 .page-footer__logo {
-  text-align: center;
+  display: block;
+  text-align: left;
   padding-top: 39px;
   padding-bottom: 28px;
   border-bottom: 1px solid $black-t-brdr-clr;
+
+  &[href] {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .page-footer__social {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   border-bottom: 1px solid $black-t-brdr-clr;
 }
 
@@ -46,18 +57,18 @@
   .page-footer__contacts {
     padding-top: 65px;
     padding-bottom: 58px;
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
+    padding-left: 30px / 768px * 100%;
+    padding-right: 30px / 768px * 100%;
   }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
-    padding-top: 64px;
-    padding-bottom: 46px;
+    align-items: center;
+    padding-left: 30px / 768px * 100%;
+    padding-right: 30px / 768px * 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .page-footer__map {
@@ -67,6 +78,11 @@
   .page-footer__logo {
     border-bottom: none;
     padding: 0;
+    min-width: 162px;
+  }
+
+  .page-footer__logo-text {
+    display: block;
   }
 
   .page-footer__social {
@@ -76,6 +92,7 @@
 
   .page-footer__copyright {
     padding: 0;
+    margin-bottom: -20px;
   }
 }
 
@@ -97,8 +114,13 @@
     align-items: baseline;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 62px;
+    padding-top: 48px;
+    padding-bottom: 51px;
     width: 1300px;
     margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    align-self: center;
   }
 }

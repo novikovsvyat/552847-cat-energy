@@ -1,11 +1,46 @@
+.gift {
+  height: 289px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 35px;
+
+  &:hover {
+    .gift__link {
+      transform: scale(1.05);
+      transition: all 0.3s;
+    }
+  }
+}
+
 .gift__link {
+  position: relative;
   display: block;
+  height: 100%;
+  width: 100%;
   padding-top: 187px;
   padding-bottom: 45px;
+  background-color: $green-h-bg-clr;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 35px;
+  transition: all 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .gift__text {
@@ -20,16 +55,27 @@
 }
 
 @media ($tablet-width) {
+  .gift {
+    height: 200px;
+    margin-bottom: 76px;
+  }
+
   .gift__link {
-    display: block;
+    height: 100%;
+    width: 100%;
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-position: 12px -345px;
     margin-bottom: 76px;
+
+    &::before {
+      left: 91px / 708px * 100%;
+      right: auto;
+      margin: 0;
+    }
   }
 
   .gift__text {
@@ -43,6 +89,12 @@
 }
 
 @media ($desktop-width) {
+  .gift {
+    width: 245px;
+    height: auto;
+    margin-bottom: 0;
+  }
+
   .gift__link {
     display: block;
     padding-top: 187px;
@@ -54,6 +106,12 @@
     width: 245px;
     height: 100%;
     margin-bottom: 0;
+
+    &::before {
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
   }
 
   .gift__text {

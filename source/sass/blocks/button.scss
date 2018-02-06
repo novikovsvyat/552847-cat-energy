@@ -5,6 +5,7 @@
   background-color: $green-bg-clr;
   font-family: $oswald-fnt;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   color: $white-bg-clr;
   text-transform: uppercase;
@@ -12,9 +13,24 @@
   border: none;
   width: 100%;
 
+  &:hover {
+    background-color: $green-h-bg-clr;
+  }
+
   &--gray {
     background-color: $gray-bg-clr;
     color: $black-txt-clr;
+
+    &:hover {
+      background-color: $gray-h-bg-clr;
+      color: $black-txt-clr;
+    }
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
   }
 }
 

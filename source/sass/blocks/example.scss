@@ -131,9 +131,14 @@
   .example {
     padding-top: 43px;
     padding-bottom: 68px;
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
+    padding-left: 0;
+    padding-right: 0;
     background: linear-gradient(0deg, $gray-bg-clr 43%, $white-bg-clr 43%);
+  }
+
+  .example__container {
+    padding-left: 30px / 768px * 100%;
+    padding-right: 30px / 768px * 100%;
   }
 
   .example__header {

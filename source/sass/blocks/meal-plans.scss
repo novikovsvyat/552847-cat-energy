@@ -12,21 +12,22 @@
 
 @media ($tablet-width) {
   .meal-plans {
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
+    padding: 0;
+  }
+
+  .meal-plans__list {
+    padding: 0 30px / 768px * 100%;
   }
 }
 
 @media ($desktop-width) {
-  .meal-plans {
+  .meal-plans__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
     margin: 0 auto;
     width: 1300px;
-  }
-
-  .meal-plans__list {
-    display: flex;
-    justify-content: space-between;
   }
 }
