@@ -1,8 +1,9 @@
 .appeal {
   position: relative;
-  z-index: 1;
-  padding-top: 28px;
-  padding-bottom: 22px;
+  height: 305px;
+  margin-bottom: 197px;
+  padding-top: 27px;
+  padding-bottom: 25px;
   padding-left: 6.25%;
   padding-right: 6.25%;
   background-color: $white-bg-clr;
@@ -10,8 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 305px;
-  margin-bottom: 197px;
+  z-index: 1;
 }
 
 .appeal__title {
@@ -23,7 +23,7 @@
   margin: auto;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .appeal__slogan {
@@ -47,18 +47,24 @@
   z-index: -1;
 }
 
+.appeal__button {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px;
+}
+
 @media ($tablet-width) {
   .appeal {
-    padding-top: 58px;
-    padding-bottom: 336px;
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
-    background-image: none;
     height: auto;
+    margin-bottom: 533px;
+    padding: 0;
+    padding-top: 58px;
+    background-image: none;
   }
 
   .appeal__wrapper {
-    padding-left: 90px;
+    padding-left: 120px / 768px * 100%;
+    padding-right: 30px / 768px * 100%;
   }
 
   .appeal__title {
@@ -83,6 +89,9 @@
   .appeal__button {
     width: 245px;
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px;
   }
 
   .appeal__image {
@@ -97,15 +106,17 @@
 
 @media ($desktop-width) {
   .appeal {
-    height: 583px;
-    padding-top: 109px;
+    height: 696px;
+    margin-top: -113px;
+    margin-bottom: 80px;
+    padding-top: 222px;
     padding-bottom: 0;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: 80px;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(90deg, $white-bg-clr calc(50% + 40px), #63a73b calc(50% + 40px));
+    background-repeat: no-repeat repeat;
+    background-position-x: calc(50vw + 40px), left;
     background-size: contain;
-    background-position-x: right;
   }
 
   .appeal__wrapper {
@@ -122,8 +133,8 @@
     position: absolute;
     left: 270px;
     right: 0;
-    top: 24px;
+    top: 140px;
     margin: auto;
-    width: 520px;
+    width: 515px;
   }
 }

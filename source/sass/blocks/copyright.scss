@@ -2,6 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $green-bg-clr;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -14,4 +25,10 @@
 
 .copyright__image {
   display: block;
+}
+
+@media ($tablet-width) {
+  .copyright {
+    min-width: 162px;
+  }
 }

@@ -3,5 +3,70 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    path,
+    circle {
+      fill: $green-bg-clr;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    path,
+    circle {
+      fill: $green-bg-clr;
+    }
+  }
+}
+
+@media ($tablet-width) {
+  .social__list {
+    align-items: flex-start;
+  }
+
+  .social__item {
+    margin: 10px;
+  }
+
+  .social__link {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+
+    &--vk {
+      svg {
+        width: 30px;
+        height: 16px;
+      }
+    }
+
+    &--inst {
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      svg {
+        width: 14px;
+        height: 28px;
+      }
+    }
+  }
 }

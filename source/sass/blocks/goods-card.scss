@@ -49,6 +49,22 @@
 .goods-card__image-link {
   display: block;
   width: 50%;
+
+  &:active,
+  &:focus {
+    .goods-card__image {
+      opacity: 0.3;
+    }
+  }
+}
+
+.goods-card__link {
+  &:active,
+  &:focus {
+    .goods-card__title {
+      opacity: 0.3;
+    }
+  }
 }
 
 .goods-card__image {

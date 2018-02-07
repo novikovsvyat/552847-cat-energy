@@ -19,8 +19,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
+    padding-left: 30px / 768px * 100%;
+    padding-right: 30px / 768px * 100%;
   }
 }
 

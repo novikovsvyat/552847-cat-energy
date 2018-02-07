@@ -34,25 +34,19 @@
 @media ($tablet-width) {
   .picking {
     position: relative;
-    padding-left: $tablet-external-padding;
-    padding-right: $tablet-external-padding;
   }
 
   .picking__text {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 26px;
-    padding-left: 40px / 708px * 100%;
-    padding-right: 0;
-    width: 390px;
+    padding-left: 70px / 768px * 100%;
+    padding-right: 70px / 768px * 100%;
     margin-top: -5px;
   }
 
   .picking-form__note {
     font-size: 16px;
-    position: absolute;
-    right: 174px;
-    bottom: 20px;
     margin: 0;
   }
 
@@ -73,9 +67,5 @@
     padding-right: 40px;
     padding-left: 40px;
     margin-top: -5px;
-  }
-
-  .picking-form__note {
-    right: 430px;
   }
 }

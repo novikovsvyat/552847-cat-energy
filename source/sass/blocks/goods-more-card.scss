@@ -2,6 +2,29 @@
   padding-top: 79px;
   padding-left: calc(6.25% - 1px);
   padding-right: calc(6.25% - 1px);
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $gray-brdr-clr;
+  }
+
+  &::before {
+    top: 40px;
+    width: 30px;
+    height: 2px;
+  }
+
+  &::after {
+    top: 26px;
+    width: 2px;
+    height: 30px;
+  }
 }
 
 .goods-more-card__title {
@@ -41,6 +64,18 @@
     padding-bottom: 38px;
     padding-left: 38px / 708px * 100%;
     padding-right: 38px / 708px * 100%;
+
+    &::before {
+      top: 83px;
+      width: 60px;
+      height: 2px;
+    }
+
+    &::after {
+      top: 54px;
+      width: 2px;
+      height: 60px;
+    }
   }
 
   .goods-more-card__title {
