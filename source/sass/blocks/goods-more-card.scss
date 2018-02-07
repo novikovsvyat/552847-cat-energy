@@ -64,6 +64,18 @@
     padding-bottom: 38px;
     padding-left: 38px / 708px * 100%;
     padding-right: 38px / 708px * 100%;
+
+    &::before {
+      top: 83px;
+      width: 60px;
+      height: 2px;
+    }
+
+    &::after {
+      top: 54px;
+      width: 2px;
+      height: 60px;
+    }
   }
 
   .goods-more-card__title {
