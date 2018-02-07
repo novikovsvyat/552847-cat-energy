@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover {
+  &:hover,
+  &:focus {
     path {
       fill: $green-bg-clr;
     }

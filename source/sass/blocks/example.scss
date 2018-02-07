@@ -117,6 +117,7 @@
     margin: 0;
     text-transform: uppercase;
     font-weight: normal;
+    cursor: pointer;
   }
 }
 
@@ -218,6 +219,14 @@
       line-height: 20px;
       border-bottom: 1px dotted $gray-brdr-clr;
       padding-bottom: 6px;
+
+      &:hover {
+        border-bottom: 1px solid $gray-brdr-clr;
+      }
+
+      &:active {
+        border-bottom: none;
+      }
     }
   }
 
@@ -240,20 +249,26 @@
 
   .example__container {
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 0;
     margin: 0 auto;
     width: 1300px;
     display: flex;
   }
 
+  .example__wrapper {
+    margin-top: -55px;
+    width: 690;
+  }
+
   .example__list {
-    margin-bottom: 10px;
+    margin-bottom: 35px;
   }
 
   .example__footer {
     width: auto;
     margin: 0;
     padding-left: 80px;
+    padding-right: 40px;
   }
 
   .example__title {
@@ -288,9 +303,5 @@
 
   .example__cost-data {
     margin-right: 60px;
-  }
-
-  .example__image {
-    width: 650px;
   }
 }

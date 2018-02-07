@@ -1,3 +1,12 @@
+.extra-goods-card__link {
+  &:active,
+  &:focus {
+    .extra-goods-card__title {
+      opacity: 0.3;
+    }
+  }
+}
+
 .extra-goods-card__title {
   font-family: $oswald-fnt;
   font-size: 16px;

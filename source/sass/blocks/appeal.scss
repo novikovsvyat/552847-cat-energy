@@ -113,10 +113,9 @@
     padding-bottom: 0;
     padding-right: 0;
     padding-left: 0;
-    background: linear-gradient(90deg, $white-bg-clr 50%, $green-bg-clr 50%);
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position-x: 53vw;
+    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(90deg, $white-bg-clr calc(50% + 40px), #63a73b calc(50% + 40px));
+    background-repeat: no-repeat repeat;
+    background-position-x: calc(50vw + 40px), left;
     background-size: contain;
   }
 
@@ -134,8 +133,8 @@
     position: absolute;
     left: 270px;
     right: 0;
-    top: 136px;
+    top: 140px;
     margin: auto;
-    width: 520px;
+    width: 515px;
   }
 }

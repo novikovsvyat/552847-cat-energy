@@ -13,7 +13,8 @@
   border: none;
   width: 100%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $green-h-bg-clr;
   }
 
@@ -21,7 +22,8 @@
     background-color: $gray-bg-clr;
     color: $black-txt-clr;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $gray-h-bg-clr;
       color: $black-txt-clr;
     }

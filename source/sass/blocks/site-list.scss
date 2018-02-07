@@ -32,7 +32,8 @@
   padding: 22px 6.25% 23px;
 
   &[href] {
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.6;
     }
 

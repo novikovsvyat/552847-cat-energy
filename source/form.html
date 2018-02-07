@@ -45,15 +45,15 @@
             <legend class="visually-hidden">Личные данные кота</legend>
               <p class="program-form__label-input program-form__label-input--personal">
                 <label class="program-form__label" for="cat-name">Имя:<sup>*</sup></label>
-                <input class="program-form__input program-form__input--text" id="cat-name" type="text" name="cat-name">
+                <input class="program-form__input program-form__input--text" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
               </p>
               <p class="program-form__label-input program-form__label-input--personal">
                 <label class="program-form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-                <input class="program-form__input program-form__input--text" id="cat-weight" type="text" name="cat-weight">
+                <input class="program-form__input program-form__input--text" id="cat-weight" type="text" name="cat-weight" placeholder="7">
               </p>
               <p class="program-form__label-input program-form__label-input--personal">
                 <label class="program-form__label" for="cat-age">Возраст (лет):</label>
-                <input class="program-form__input program-form__input--text" id="cat-age" type="text" name="cat-age">
+                <input class="program-form__input program-form__input--text" id="cat-age" type="text" name="cat-age" placeholder="7">
               </p>
           </fieldset>
 
@@ -78,53 +78,49 @@
             <div class="program-form__fields-wrapper">
               <p class="program-form__label-input program-form__label-input--contacts">
                 <label class="program-form__label" for="owner-email">E-mail:<sup>*</sup></label>
-                <input class="program-form__input program-form__input--text" id="owner-email" type="email" name="owner-email">
+                <input class="program-form__input program-form__input--text" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
               </p>
               <p class="program-form__label-input program-form__label-input--contacts">
                 <label class="program-form__label" for="owner-phone">Телефон:<sup>*</sup></label>
-                <input class="program-form__input program-form__input--text" id="owner-phone" type="tel" name="owner-phone">
+                <input class="program-form__input program-form__input--text" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
               </p>
             </div>
           </fieldset>
 
           <fieldset class="program-form__fieldset program-form__fieldset--comment">
             <legend class="program-form__legend">Комментарий</legend>
-              <p class="program-form__fields-wrapper">
-                <textarea class="program-form__input program-form__input--area" id="cat-nature" name="cat-nature"></textarea>
-              </p>
+            <p class="program-form__fields-wrapper">
+              <textarea class="program-form__input program-form__input--area" id="cat-nature" name="cat-nature" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </p>
           </fieldset>
 
           <fieldset class="program-form__fieldset program-form__fieldset--add">
             <legend class="program-form__legend program-form__legend--add">Дополнительно</legend>
-              <div class="program-form__fields-wrapper">
-                <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="sugarfree" type="checkbox" name="sugarfree" checked>
-                  <label class="program-form__label" for="sugarfree">Сахарозаменитель</label>
-                </p>
-                <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="water" type="checkbox" name="water">
-                  <label class="program-form__label" for="water">Питьевая вода</label>
-                </p>
-                <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="milk" type="checkbox" name="milk">
-                  <label class="program-form__label" for="milk">Молоко</label>
-                </p>
-                <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
-                  <label class="program-form__label" for="vitamins">Витамины</label>
-                </p>
-              </div>
+            <div class="program-form__fields-wrapper">
+              <p class="program-form__label-input program-form__label-input--add">
+                <input class="program-form__input--checkbox visually-hidden" id="sugarfree" type="checkbox" name="sugarfree" checked>
+                <label class="program-form__label" for="sugarfree">Сахарозаменитель</label>
+              </p>
+              <p class="program-form__label-input program-form__label-input--add">
+                <input class="program-form__input--checkbox visually-hidden" id="water" type="checkbox" name="water">
+                <label class="program-form__label" for="water">Питьевая вода</label>
+              </p>
+              <p class="program-form__label-input program-form__label-input--add">
+                <input class="program-form__input--checkbox visually-hidden" id="milk" type="checkbox" name="milk">
+                <label class="program-form__label" for="milk">Молоко</label>
+              </p>
+              <p class="program-form__label-input program-form__label-input--add">
+                <input class="program-form__input--checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+                <label class="program-form__label" for="vitamins">Витамины</label>
+              </p>
+            </div>
           </fieldset>
 
-          <div class="program-form__container">
-            <p class="program-form__button-wrapper">
-              <button class="program-form__button button" type="submit">
-                <span tabindex="-1">Отправить заявку</span>
-              </button>
-            </p>
-          </div>
+          <p class="program-form__container program-form__container--flex">
+            <button class="program-form__button button" type="submit">Отправить заявку</button>
+            <small class="picking-form__note"><sup class="picking-form__note-sup">*</sup> &mdash; Обязательные поля</small>
+          </p>
         </form>
-        <small class="picking-form__note"><sup class="picking-form__note-sup">*</sup> &mdash; Обязательные поля</small>
       </section>
 
     </main>

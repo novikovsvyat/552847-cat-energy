@@ -111,7 +111,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     span {
       &::before {
         right: 6px;
