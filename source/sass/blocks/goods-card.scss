@@ -96,9 +96,13 @@
     display: block;
     left: 0;
     right: 0;
-    bottom: 260px;
+    bottom: 305px;
     margin: auto;
-    width: 140px;
+    width: 324px;
+  }
+
+  .goods-card__image {
+    width: 100%;
   }
 
   .goods-card__wrapper {
@@ -159,5 +163,9 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+
+  .goods-card__image-link {
+    width: 245px;
   }
 }
