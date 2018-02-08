@@ -41,9 +41,17 @@
   .main-nav-logo__image {
     position: static;
     margin: 0;
+    width: 173px;
+    height: auto;
   }
 
   .main-nav-logo__text {
     display: none;
+  }
+}
+
+@media ($desktop-width) {
+  .main-nav-logo__image {
+    width: 202px;
   }
 }
