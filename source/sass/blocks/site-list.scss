@@ -46,6 +46,7 @@
 @media ($tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 9px;
   }
 
