@@ -46,6 +46,7 @@
 @media ($tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 9px;
   }
 
@@ -75,6 +76,8 @@
 @media ($desktop-width) {
   .site-list {
     padding-top: 12px;
+    width: 570px;
+    padding-left: 92px;
   }
 
   .site-list--index {
