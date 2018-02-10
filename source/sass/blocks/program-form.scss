@@ -2,11 +2,37 @@
   margin-bottom: 21px;
 }
 
+.program-form__container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  &--button {
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+  }
+
+  &--contacts,
+  &--comment,
+  &--add {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $green-bg-clr;
+      top: 14px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
 .program-form__fieldset {
   margin: 0;
   padding: 0;
   border: none;
-  position: relative;
   margin-bottom: 28px;
 
   &--personal {
@@ -28,24 +54,14 @@
   &--add {
     margin-bottom: 36px;
   }
+}
 
-  &--contacts,
-  &--comment,
-  &--add {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      background-color: $green-bg-clr;
-      top: 14px;
-      left: 0;
-      z-index: -1;
-    }
-  }
+.program-form__leg {
+  width: 100%;
 }
 
 .program-form__legend {
+  display: inline-block;
   margin: 0;
   padding: 0;
   font-family: $oswald-fnt;
@@ -134,6 +150,12 @@
       border: 2px solid #ff8282;
       padding: 12px;
     }
+
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
   }
 
   &--text {
@@ -201,12 +223,6 @@
   border: 1px solid $gray-brdr-clr;
 }
 
-.program-form__container {
-  margin: 0;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
-}
-
 .program-form__button {
   margin: 0;
   padding: 10px;
@@ -217,6 +233,22 @@
 @media ($tablet-width) {
   .program-form {
     margin-bottom: 72px;
+  }
+
+  .program-form__container {
+    &--button {
+      padding: 0 9.2%;
+      display: flex;
+      align-items: center;
+    }
+
+    &--contacts,
+    &--comment,
+    &--add {
+      &::before {
+        top: 22px;
+      }
+    }
   }
 
   .program-form__fieldset {
@@ -245,14 +277,6 @@
 
     &--add {
       margin-bottom: 55px;
-    }
-
-    &--contacts,
-    &--comment,
-    &--add {
-      &::before {
-        top: 22px;
-      }
     }
   }
 
@@ -342,7 +366,6 @@
     &:active,
     &:focus,
     &:invalid {
-      border: 2px solid $gray-txt-clr;
       padding: 13px 15px;
     }
   }
@@ -375,15 +398,6 @@
     top: 10px;
   }
 
-  .program-form__container {
-    padding: 0 9.2%;
-
-    &--flex {
-      display: flex;
-      align-items: center;
-    }
-  }
-
   .program-form__button {
     width: 45%;
     padding: 16px;
@@ -404,11 +418,7 @@
     justify-content: space-between;
   }
 
-  .program-form__fieldset {
-    margin: 0;
-    margin-bottom: 68px;
-    border: none;
-    width: 100%;
+  .program-form__container {
 
     &--personal,
     &--goal {
@@ -417,12 +427,33 @@
 
     &--personal {
       margin-left: calc(40px + (100% - 1300px) / 2);
+    }
+
+    &--goal {
+      margin-right: calc(40px + (100% - 1300px) / 2);
+    }
+
+    &--button {
+      display: flex;
+      align-items: center;
+      width: 1300px;
+      padding: 0 40px;
+      margin: 0 auto;
+    }
+  }
+
+  .program-form__fieldset {
+    margin: 0;
+    margin-bottom: 68px;
+    border: none;
+    width: 100%;
+
+    &--personal {
       padding: 0;
     }
 
     &--goal {
       left: 0;
-      margin-right: calc(40px + (100% - 1300px) / 2);
       padding-left: 0;
       padding-right: 0;
       border: 1px solid rgba(205, 205, 205, 0.5);
@@ -493,17 +524,6 @@
   .program-form__input--checkbox:checked + .program-form__label::after {
     left: 10px;
     top: 10px;
-  }
-
-  .program-form__container {
-    width: 1300px;
-    padding: 0 40px;
-    margin: 0 auto;
-
-    &--flex {
-      display: flex;
-      align-items: center;
-    }
   }
 
   .program-form__button {

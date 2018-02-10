@@ -82,5 +82,8 @@
 @media ($desktop-width) {
   .main-nav {
     padding: 0 40px;
+    padding-right: 0;
+    width: 1300px;
+    margin: 0 auto;
   }
 }
