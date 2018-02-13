@@ -180,11 +180,11 @@
     padding-right: 40px;
     margin: 0 auto;
     width: 1300px;
+    justify-content: flex-start;
   }
 
   .how-it-works__item {
     margin-bottom: 89px;
-    margin-right: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 112px;
@@ -192,6 +192,11 @@
 
     &:nth-child(1n+0) {
       margin-bottom: 39px;
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
 
     &::after {
