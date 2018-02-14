@@ -111,17 +111,14 @@
 }
 
 .example__label {
-  &--before,
-  &--after {
-    font-family: $oswald-fnt;
-    font-size: 16px;
-    line-height: 20px;
-    color: $black-txt-clr;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: normal;
-    cursor: pointer;
-  }
+  font-family: $oswald-fnt;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black-txt-clr;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .example__toogle {
@@ -216,20 +213,17 @@
   }
 
   .example__label {
-    &--before,
-    &--after {
-      font-size: 20px;
-      line-height: 20px;
-      border-bottom: 1px dotted $gray-brdr-clr;
-      padding-bottom: 6px;
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted $gray-brdr-clr;
+    padding-bottom: 6px;
 
-      &:hover {
-        border-bottom: 1px solid $gray-brdr-clr;
-      }
+    &:hover {
+      border-bottom: 1px solid $gray-brdr-clr;
+    }
 
-      &:active {
-        border-bottom: none;
-      }
+    &:active {
+      border-bottom: none;
     }
   }
 
