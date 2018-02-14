@@ -108,6 +108,33 @@
   text-transform: uppercase;
   margin-right: 5%;
   flex-shrink: 0;
+
+  &--email,
+  &--tel {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      top: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: 20px auto;
+      background-position: center;
+    }
+  }
+
+  &--email {
+    &::before {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  &--tel {
+    &::before {
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
 }
 
 .program-form__input {

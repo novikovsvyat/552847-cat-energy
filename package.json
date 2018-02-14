@@ -24,9 +24,14 @@
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
+    "images-jpg": "gulp images-jpg",
+    "images-png": "gulp images-png",
+    "images-svg": "gulp images-svg",
+    "webp": "gulp webp",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
