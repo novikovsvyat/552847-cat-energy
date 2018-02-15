@@ -70,6 +70,22 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("sprite-form", function() {
+    return gulp.src([
+    "source/img/**/icon-fb.svg",
+    "source/img/**/icon-insta.svg",
+    "source/img/**/icon-vk.svg",
+    "source/img/**/htmlacademy.svg",
+    "source/img/**/icon-mail.svg",
+    "source/img/**/icon-phone.svg"
+  ])
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite-form.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([
@@ -99,6 +115,7 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "sprite",
+    "sprite-form",
     "html",
     done
   );

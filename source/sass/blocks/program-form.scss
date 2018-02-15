@@ -99,6 +99,14 @@
   }
 }
 
+.program-form__phone-icon {
+  position: absolute;
+  right: 19px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .program-form__label {
   font-family: $oswald-fnt;
   font-size: 16px;
@@ -108,33 +116,6 @@
   text-transform: uppercase;
   margin-right: 5%;
   flex-shrink: 0;
-
-  &--email,
-  &--tel {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 45px;
-      height: 45px;
-      top: 0;
-      right: 0;
-      background-repeat: no-repeat;
-      background-size: 20px auto;
-      background-position: center;
-    }
-  }
-
-  &--email {
-    &::before {
-      background-image: url("../img/icon-mail.svg");
-    }
-  }
-
-  &--tel {
-    &::before {
-      background-image: url("../img/icon-phone.svg");
-    }
-  }
 }
 
 .program-form__input {
@@ -292,8 +273,7 @@
 
     &--goal {
       position: relative;
-      left: 9.2%;
-      width: 100% - 9.2%;
+      margin: 0 9.2%;
       margin-bottom: 75px;
       padding-left: 40px;
       padding-right: 40px;
@@ -483,7 +463,6 @@
     }
 
     &--goal {
-      left: 0;
       padding-left: 0;
       padding-right: 0;
       border: 1px solid rgba(205, 205, 205, 0.5);
