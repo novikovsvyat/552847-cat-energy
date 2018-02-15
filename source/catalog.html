@@ -366,9 +366,7 @@
           <span>Санкт&#8209;Петербург</span>
         </p>
       </div>
-      <div class="page-footer__map-wrapper">
-        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043705196!2d30.320889251732964!3d59.9387941817873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sby!4v1516380316587" width="360" height="360" allowfullscreen></iframe>
-      </div>
+      <div id="map" class="page-footer__map-wrapper"></div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-text" src="img/logo-footer.svg" width="129" height="24" alt="Кэт энерджи">
@@ -410,5 +408,9 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/map-marker.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyuBtxESYGmHHbm4b79YZWJn0bVLxy2xM&callback=initMap">
+    </script>
   </body>
 </html>
