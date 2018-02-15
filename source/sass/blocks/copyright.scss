@@ -5,13 +5,17 @@
 
   &:hover,
   &:focus {
-    path {
+    .copyright__icon {
       fill: $green-bg-clr;
     }
   }
 
   &:active {
     opacity: 0.3;
+
+    .copyright__icon {
+      fill: $green-bg-clr;
+    }
   }
 }
 

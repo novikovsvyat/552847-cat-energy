@@ -16,8 +16,7 @@
 
   &:hover,
   &:focus {
-    path,
-    circle {
+    .social__icon {
       fill: $green-bg-clr;
     }
   }
@@ -25,8 +24,7 @@
   &:active {
     opacity: 0.3;
 
-    path,
-    circle {
+    .social__icon {
       fill: $green-bg-clr;
     }
   }
