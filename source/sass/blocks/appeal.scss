@@ -63,7 +63,7 @@
     margin-bottom: 533px;
     padding: 0;
     padding-top: 58px;
-    background-image: none;
+    background: none;
   }
 
   .appeal__wrapper {
@@ -110,21 +110,12 @@
 
 @media ($desktop-width) {
   .appeal {
-    height: 696px;
-    margin-top: -113px;
+    height: 583px;
     margin-bottom: 80px;
-    padding-top: 222px;
+    padding-top: 109px;
     padding-bottom: 0;
     padding-right: 0;
     padding-left: 0;
-    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, $white-bg-clr calc(50% + 40px), #63a73b calc(50% + 40px));
-    background-repeat: no-repeat repeat;
-    background-position-x: calc(50vw + 40px), left;
-    background-size: contain;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(90deg, $white-bg-clr calc(50% + 40px), #63a73b calc(50% + 40px));
-    }
   }
 
   .appeal__wrapper {
@@ -139,7 +130,7 @@
 
   .appeal__image {
     left: 230px;
-    top: 142px;
+    top: 29px;
     width: 550px;
   }
 }

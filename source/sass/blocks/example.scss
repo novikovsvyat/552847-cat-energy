@@ -50,6 +50,9 @@
 .example__cost-item {
   margin: auto;
   margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .example__def-term {
@@ -92,7 +95,7 @@
   padding-left: 6.25%;
   padding-right: 6.25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .example__list {
@@ -108,23 +111,28 @@
 }
 
 .example__label {
-  &--before,
-  &--after {
-    font-family: $oswald-fnt;
-    font-size: 16px;
-    line-height: 20px;
-    color: $black-txt-clr;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: normal;
-    cursor: pointer;
-  }
+  font-family: $oswald-fnt;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black-txt-clr;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .example__toogle {
   &--before:checked ~ .example__list .example__item:nth-child(1),
   &--after:checked ~ .example__list .example__item:nth-child(2) {
     display: block;
+  }
+
+  &--before:checked ~ .example__footer .slider .slider__toggle {
+    left: 5px;
+  }
+
+  &--after:checked ~ .example__footer .slider .slider__toggle {
+    left: calc(100% - 40px);
   }
 }
 
@@ -213,20 +221,17 @@
   }
 
   .example__label {
-    &--before,
-    &--after {
-      font-size: 20px;
-      line-height: 20px;
-      border-bottom: 1px dotted $gray-brdr-clr;
-      padding-bottom: 6px;
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted $gray-brdr-clr;
+    padding-bottom: 6px;
 
-      &:hover {
-        border-bottom: 1px solid $gray-brdr-clr;
-      }
+    &:hover {
+      border-bottom: 1px solid $gray-brdr-clr;
+    }
 
-      &:active {
-        border-bottom: none;
-      }
+    &:active {
+      border-bottom: none;
     }
   }
 
@@ -236,6 +241,16 @@
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .example__toogle {
+    &--before:checked ~ .example__footer .slider .slider__toggle {
+      left: 0;
+    }
+
+    &--after:checked ~ .example__footer .slider .slider__toggle {
+      left: calc(100% - 32px);
+    }
   }
 }
 
