@@ -32,21 +32,13 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("images-jpg", function() {
-  return gulp.src("source/img/**/*.jpg")
-    .pipe(imagemin(imagemin.jpegtran({progressive: true})))
-    .pipe(gulp.dest("source/img"));
-});
-
-gulp.task("images-png", function() {
-  return gulp.src("source/img/**/*.png")
-    .pipe(imagemin(imagemin.optipng({optimizationLevel: 3})))
-    .pipe(gulp.dest("source/img"));
-});
-
-gulp.task("images-svg", function() {
-  return gulp.src("source/img/**/*.svg")
-    .pipe(imagemin(imagemin.svgo()))
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+      ]))
     .pipe(gulp.dest("source/img"));
 });
 

@@ -28,9 +28,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "images-jpg": "gulp images-jpg",
-    "images-png": "gulp images-png",
-    "images-svg": "gulp images-svg",
+    "images": "gulp images",
     "webp": "gulp webp",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
