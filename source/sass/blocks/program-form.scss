@@ -127,7 +127,7 @@
     width: 100%;
     font-family: $oswald-fnt;
     font-size: 16px;
-    line-height: 18px;
+    line-height: normal;
     color: $gray-txt-clr;
     font-weight: 400;
     text-transform: uppercase;
@@ -219,16 +219,16 @@
   transform: rotate(-45deg);
 }
 
-.program-form__input--radio:active + .program-form__label,
-.program-form__input--checkbox:active + .program-form__label {
-  opacity: 0.3;
-}
-
 .program-form__input--radio:hover + .program-form__label::before,
 .program-form__input--radio:focus + .program-form__label::before,
 .program-form__input--checkbox:hover + .program-form__label::before,
 .program-form__input--checkbox:focus + .program-form__label::before {
   border: 1px solid $gray-brdr-clr;
+}
+
+.program-form__input--radio:disabled + .program-form__label,
+.program-form__input--checkbox:disabled + .program-form__label {
+  opacity: 0.3;
 }
 
 .program-form__button {
@@ -354,7 +354,7 @@
     &--area {
       width: 100%;
       font-size: 20px;
-      line-height: 20px;
+      line-height: normal;
       padding: 14px 16px;
     }
 

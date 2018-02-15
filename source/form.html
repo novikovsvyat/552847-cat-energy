@@ -54,11 +54,11 @@
                 </p>
                 <p class="program-form__label-input program-form__label-input--personal">
                   <label class="program-form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-                  <input class="program-form__input program-form__input--text" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+                  <input class="program-form__input program-form__input--text" id="cat-weight" type="text" name="cat-weight" placeholder="7" pattern="[1-9]{1,}">
                 </p>
                 <p class="program-form__label-input program-form__label-input--personal">
                   <label class="program-form__label" for="cat-age">Возраст (лет):</label>
-                  <input class="program-form__input program-form__input--text" id="cat-age" type="text" name="cat-age" placeholder="7">
+                  <input class="program-form__input program-form__input--text" id="cat-age" type="text" name="cat-age" placeholder="7" pattern="[1-9]{1,}">
                 </p>
             </fieldset>
           </div>
@@ -87,14 +87,14 @@
               <div class="program-form__fields-wrapper">
                 <p class="program-form__label-input program-form__label-input--contacts">
                   <label class="program-form__label program-form__label--email" for="owner-email">E-mail:<sup>*</sup></label>
-                  <input class="program-form__input program-form__input--text" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                  <input class="program-form__input program-form__input--text" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                   <svg class="program-form__phone-icon" width="17" height="13">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </p>
                 <p class="program-form__label-input program-form__label-input--contacts">
                   <label class="program-form__label program-form__label--tel" for="owner-phone">Телефон:<sup>*</sup></label>
-                  <input class="program-form__input program-form__input--text" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+                  <input class="program-form__input program-form__input--text" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}">
                   <svg class="program-form__phone-icon" width="20" height="20">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
