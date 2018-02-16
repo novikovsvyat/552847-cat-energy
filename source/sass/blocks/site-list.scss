@@ -4,16 +4,6 @@
   padding: 0;
 }
 
-@media ($max-mobile-width) {
-  .main-nav--show .site-list {
-    display: block;
-  }
-
-  .main-nav--hide .site-list {
-    display: none;
-  }
-}
-
 .site-list__item {
   text-align: center;
   padding: 0;

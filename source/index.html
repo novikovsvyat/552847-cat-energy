@@ -12,7 +12,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header page-header--index">
-      <nav class="main-nav">
+      <nav class="main-nav"> <!-- модификатор show у main-nav при открытом меню, hide - при скрытом. -->
         <div class="main-nav__head">
           <a class="main-nav__link main-nav-logo">
             <picture>
@@ -22,7 +22,7 @@
             </picture>
             <img class="main-nav-logo__text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Кэт энерджи">
           </a>
-          <button class="main-nav__toogle" type="button">
+          <button class="main-nav__toogle" type="button"> <!-- внешний вид зависит от наличия модификатора у main-nav. -->
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -54,7 +54,7 @@
         </div>
       </section>
     </header>
-    <main class="page-main--index">
+    <main class="page-main page-main--index">
       <h1 class="visually-hidden">Кэт энерджи - кормите своего кота правильно!</h1>
       <section class="meal-plans">
         <h2 class="visually-hidden">Планы питания</h2>
@@ -113,8 +113,8 @@
             </ul>
           </div>
           <div class="example__wrapper">
-            <input class="visually-hidden example__toogle--before" id="before" type="radio" name="cat-example" checked>
-            <input class="visually-hidden example__toogle--after" id="after" type="radio" name="cat-example">
+            <input class="visually-hidden example__toogle example__toogle--before" id="before" type="radio" name="cat-example" checked>
+            <input class="visually-hidden example__toogle example__toogle--after" id="after" type="radio" name="cat-example">
             <ul class="example__list">
               <li class="example__item">
                 <picture>
@@ -199,6 +199,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
     <script src="js/map-marker.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyuBtxESYGmHHbm4b79YZWJn0bVLxy2xM&callback=initMap">

@@ -9,10 +9,10 @@
   </head>
   <body>
     <div style="display:none">
-      <include src="build/img/sprite-form.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav"> <!-- модификатор show у main-nav при открытом меню, hide - при скрытом. -->
         <div class="main-nav__head">
           <a class="main-nav__link main-nav-logo" href="index.html">
             <picture>
@@ -22,7 +22,7 @@
             </picture>
             <img class="main-nav-logo__text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Кэт энерджи">
           </a>
-          <button class="main-nav__toogle" type="button">
+          <button class="main-nav__toogle" type="button"> <!-- внешний вид зависит от наличия модификатора у main-nav. -->
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -66,15 +66,15 @@
             <fieldset class="program-form__fieldset program-form__fieldset--goal">
                 <legend class="visually-hidden">Цель программы</legend>
                 <p class="program-form__label-input program-form__label-input--goal">
-                  <input class="program-form__input--radio visually-hidden" id="lose" type="radio" name="goal" checked>
+                  <input class="program-form__input program-form__input--radio visually-hidden" id="lose" type="radio" name="goal" checked>
                   <label class="program-form__label" for="lose">Похудение</label>
                 </p>
                 <p class="program-form__label-input program-form__label-input--goal">
-                  <input class="program-form__input--radio visually-hidden" id="gain" type="radio" name="goal">
+                  <input class="program-form__input program-form__input--radio visually-hidden" id="gain" type="radio" name="goal">
                   <label class="program-form__label" for="gain">Набор массы</label>
                 </p>
                 <p class="program-form__label-input program-form__label-input--goal">
-                  <input class="program-form__input--radio visually-hidden" id="idknow" type="radio" name="goal">
+                  <input class="program-form__input program-form__input--radio visually-hidden" id="idknow" type="radio" name="goal">
                   <label class="program-form__label" for="idknow">Не знаю (нужен ваш совет)</label>
                 </p>
             </fieldset>
@@ -119,19 +119,19 @@
               </legend>
               <div class="program-form__fields-wrapper">
                 <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="sugarfree" type="checkbox" name="sugarfree" checked>
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" id="sugarfree" type="checkbox" name="sugarfree" checked>
                   <label class="program-form__label" for="sugarfree">Сахарозаменитель</label>
                 </p>
                 <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="water" type="checkbox" name="water">
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" id="water" type="checkbox" name="water">
                   <label class="program-form__label" for="water">Питьевая вода</label>
                 </p>
                 <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="milk" type="checkbox" name="milk">
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" id="milk" type="checkbox" name="milk">
                   <label class="program-form__label" for="milk">Молоко</label>
                 </p>
                 <p class="program-form__label-input program-form__label-input--add">
-                  <input class="program-form__input--checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+                  <input class="program-form__input program-form__input--checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
                   <label class="program-form__label" for="vitamins">Витамины</label>
                 </p>
               </div>
@@ -145,7 +145,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts contacts">
+      <div class="page-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
         <p class="contacts__text">
           <span class="contacts__addr">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
@@ -194,6 +194,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
     <script src="js/map-marker.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyuBtxESYGmHHbm4b79YZWJn0bVLxy2xM&callback=initMap">
