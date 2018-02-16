@@ -36,11 +36,16 @@
 
 @media ($tablet-width) {
   .social__list {
+    margin-top: 10px;
     align-items: flex-start;
   }
 
   .social__item {
-    margin: 10px;
+    margin: 0 25px 9px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .social__link {
@@ -69,6 +74,7 @@
         width: 14px;
         height: 28px;
       }
+      justify-content: flex-start;
     }
   }
 }
