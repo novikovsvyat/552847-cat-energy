@@ -205,10 +205,6 @@
     }
   }
 
-  .example__wrapper {
-
-  }
-
   .example__list {
     position: relative;
     margin: 0;
@@ -284,6 +280,7 @@
     padding-right: 0;
     background: linear-gradient(0deg, $gray-bg-clr 72%, $white-bg-clr 72%);
   }
+
   .example__header {
     padding: 0;
   }
