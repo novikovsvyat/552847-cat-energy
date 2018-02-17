@@ -136,11 +136,11 @@
     width: 100%;
     font-family: $oswald-fnt;
     font-size: 16px;
-    line-height: normal;
+    line-height: 45px;
     color: $gray-txt-clr;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 13px;
+    padding: 0 13px;
 
     &:placeholder-shown {
       color: $gray-txt-clr;
@@ -154,13 +154,13 @@
 
     &:hover {
       border: 1px solid $gray-brdr-clr;
-      padding: 13px;
+      padding: 0 13px;
     }
 
     &:active,
     &:focus {
       border: 2px solid $gray-txt-clr;
-      padding: 12px;
+      padding: 0 12px;
 
       .program-form__phone-icon {
         fill: $green-bg-clr;
@@ -169,7 +169,7 @@
 
     &:invalid {
       border: 2px solid #ff8282;
-      padding: 12px;
+      padding: 0 12px;
 
       .program-form__phone-icon {
         fill: #ff8282;
@@ -375,27 +375,27 @@
   }
 
   .program-form__input {
+    line-height: 52px;
+
     &--text,
     &--area {
       width: 100%;
       font-size: 20px;
-      line-height: normal;
-      padding: 14px 16px;
+      padding: 0 16px;
     }
 
     &--area {
       height: 174px;
-      line-height: 20px;
     }
 
     &:hover {
-      padding: 14px 16px;
+      padding: 0 16px;
     }
 
     &:active,
     &:focus,
     &:invalid {
-      padding: 13px 15px;
+      padding: 0 15px;
     }
 
     &--text {
