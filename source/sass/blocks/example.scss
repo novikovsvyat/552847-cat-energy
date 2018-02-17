@@ -147,7 +147,7 @@
       left: 0;
       right: 0;
       z-index: -1;
-      background-image: linear-gradient(90deg,#f2f2f2 50%,#eaeaea 50%);
+      background-image: linear-gradient(90deg, #f2f2f2 50%, #eaeaea 50%);
     }
   }
 
@@ -240,7 +240,7 @@
     &--before {
       width: 50%;
       z-index: 2;
-      background-image: url("../img/before-tablet@2x.png"), linear-gradient(0deg,#f2f2f2 349px,white 349px);
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(0deg, #f2f2f2 349px, white 349px);
       background-repeat: no-repeat repeat;
       background-size: auto 518px;
       background-position-x: calc(29vw + 58%), right;
@@ -248,7 +248,7 @@
 
     &--after {
       z-index: 1;
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(0deg,#eaeaea 349px,white 349px);
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(0deg, #eaeaea 349px, white 349px);
       background-size: auto 518px;
       background-position-x: calc(58%);
     }
@@ -297,7 +297,7 @@
       left: 0;
       right: 0;
       z-index: -1;
-      background-image: linear-gradient(90deg,#f2f2f2 calc(50% + 326px),#eaeaea calc(50% + 326px));
+      background-image: linear-gradient(90deg, #f2f2f2 calc(50% + 326px), #eaeaea calc(50% + 326px));
     }
   }
 
@@ -340,7 +340,7 @@
     &--before {
       width: 53%;
       z-index: 2;
-      background-image: url("../img/before-desktop@2x.png"), linear-gradient(0deg,#f2f2f2 326px,white 326px);
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(0deg, #f2f2f2 326px, white 326px);
       background-repeat: no-repeat repeat;
       background-size: auto 518px;
       background-position-x: 0;
@@ -348,7 +348,7 @@
 
     &--after {
       z-index: 1;
-      background-image: url("../img/after-desktop@2x.png"), linear-gradient(0deg,#eaeaea 326px,white 326px);
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(0deg, #eaeaea 326px, white 326px);
       background-size: auto 518px;
       background-position-x: 0;
     }

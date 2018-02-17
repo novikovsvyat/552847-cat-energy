@@ -383,10 +383,6 @@
       padding: 14px 16px;
     }
 
-    &--text {
-      height: 52px;
-    }
-
     &--area {
       height: 174px;
       line-height: 20px;
@@ -403,7 +399,8 @@
     }
 
     &--text {
-    padding-right: 44px;
+      padding-right: 44px;
+      height: 52px;
 
       &:active,
       &:focus,
