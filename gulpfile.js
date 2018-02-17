@@ -49,20 +49,6 @@ gulp.task("webp", function() {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src([
-    "source/img/**/icon-fb.svg",
-    "source/img/**/icon-insta.svg",
-    "source/img/**/icon-vk.svg",
-    "source/img/**/htmlacademy.svg"
-  ])
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-});
-
-gulp.task("sprite-form", function() {
     return gulp.src([
     "source/img/**/icon-fb.svg",
     "source/img/**/icon-insta.svg",
@@ -74,7 +60,7 @@ gulp.task("sprite-form", function() {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("sprite-form.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -107,7 +93,6 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "sprite",
-    "sprite-form",
     "html",
     done
   );

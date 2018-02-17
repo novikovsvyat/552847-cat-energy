@@ -5,14 +5,16 @@
     <title>Кэт энерджи - Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   </head>
   <body>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav"> <!-- модификатор show у main-nav при открытом меню, hide - при скрытом. -->
         <div class="main-nav__head">
           <a class="main-nav__link main-nav-logo" href="index.html">
             <picture>
@@ -22,7 +24,7 @@
             </picture>
             <img class="main-nav-logo__text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Кэт энерджи">
           </a>
-          <button class="main-nav__toogle" type="button">
+          <button class="main-nav__toogle" type="button"> <!-- внешний вид зависит от наличия модификатора у main-nav. -->
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -359,7 +361,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts contacts">
+      <div class="page-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
         <p class="contacts__text">
           <span class="contacts__addr">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8</span>
@@ -408,6 +410,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
     <script src="js/map-marker.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyuBtxESYGmHHbm4b79YZWJn0bVLxy2xM&callback=initMap">

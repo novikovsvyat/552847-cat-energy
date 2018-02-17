@@ -17,7 +17,7 @@
   transition: all 0.3s;
   position: absolute;
   border-radius: 5px;
-  background-color: green;
+  background-color: $green-bg-clr;
   width: 35px;
   height: 6px;
   left: 5px;
@@ -28,7 +28,7 @@
 @media ($tablet-width) {
   .slider {
     margin: 0;
-    position: relative;
+    position: static;
     width: 428px;
   }
 
@@ -42,14 +42,14 @@
   }
 
   .slider__toggle {
-    transition: all 0.3s;
+    transition: all 0s;
     position: absolute;
     border-radius: 50%;
     border: 1px solid #cdcdcd;
     background-color: white;
     width: 32px;
     height: 32px;
-    left: 200px;
+    left: 269px;
     top: -4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -60,7 +60,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: green;
+      background-color: $green-bg-clr;
       top: 0;
       bottom: 0;
       left: 0;
@@ -74,7 +74,13 @@
 
     &:active {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-      border: 2px solid green;
+      border: 2px solid $green-bg-clr;
     }
+  }
+}
+
+@media ($desktop-width) {
+  .slider__toggle {
+    left: 349px;
   }
 }

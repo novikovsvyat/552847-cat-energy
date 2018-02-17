@@ -59,6 +59,16 @@
   }
 }
 
+@media ($max-mobile-width) {
+  .main-nav--show .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--hide .main-nav__list {
+    display: none;
+  }
+}
+
 @media ($tablet-width) {
   .main-nav {
     display: flex;

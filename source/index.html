@@ -5,14 +5,16 @@
     <title>Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   </head>
   <body>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header page-header--index">
-      <nav class="main-nav">
+      <nav class="main-nav"> <!-- модификатор show у main-nav при открытом меню, hide - при скрытом. -->
         <div class="main-nav__head">
           <a class="main-nav__link main-nav-logo">
             <picture>
@@ -22,7 +24,7 @@
             </picture>
             <img class="main-nav-logo__text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Кэт энерджи">
           </a>
-          <button class="main-nav__toogle" type="button">
+          <button class="main-nav__toogle" type="button"> <!-- внешний вид зависит от наличия модификатора у main-nav. -->
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -54,7 +56,7 @@
         </div>
       </section>
     </header>
-    <main class="page-main--index">
+    <main class="page-main page-main--index">
       <h1 class="visually-hidden">Кэт энерджи - кормите своего кота правильно!</h1>
       <section class="meal-plans">
         <h2 class="visually-hidden">Планы питания</h2>
@@ -113,10 +115,10 @@
             </ul>
           </div>
           <div class="example__wrapper">
-            <input class="visually-hidden example__toogle--before" id="before" type="radio" name="cat-example" checked>
-            <input class="visually-hidden example__toogle--after" id="after" type="radio" name="cat-example">
+            <input class="visually-hidden example__toogle example__toogle--before" id="before" type="radio" name="cat-example" checked>
+            <input class="visually-hidden example__toogle example__toogle--after" id="after" type="radio" name="cat-example">
             <ul class="example__list">
-              <li class="example__item">
+              <li class="example__item example__item--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
@@ -126,7 +128,7 @@
                   <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот до Cat Energy Slim">
                 </picture>
               </li>
-              <li class="example__item">
+              <li class="example__item example__item--after">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
@@ -199,6 +201,8 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <!--<script src="js/slider.js"></script>-->
+    <script src="js/picturefill.js"></script>
     <script src="js/map-marker.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyuBtxESYGmHHbm4b79YZWJn0bVLxy2xM&callback=initMap">

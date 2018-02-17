@@ -122,6 +122,15 @@
   border: 1px solid $gray-t-brdr-clr;
   display: block;
 
+  &:active,
+  &:focus + .program-form__phone-icon {
+    fill: $green-bg-clr;
+  }
+
+  &:invalid + .program-form__phone-icon {
+    fill: #ff8282;
+  }
+
   &--text,
   &--area {
     width: 100%;
@@ -152,11 +161,19 @@
     &:focus {
       border: 2px solid $gray-txt-clr;
       padding: 12px;
+
+      .program-form__phone-icon {
+        fill: $green-bg-clr;
+      }
     }
 
     &:invalid {
       border: 2px solid #ff8282;
       padding: 12px;
+
+      .program-form__phone-icon {
+        fill: #ff8282;
+      }
     }
 
     &:focus {
@@ -168,6 +185,14 @@
 
   &--text {
     height: 45px;
+    padding-right: 44px;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:invalid {
+      padding-right: 44px;
+    }
   }
 
   &--area {
@@ -358,12 +383,9 @@
       padding: 14px 16px;
     }
 
-    &--text {
-      height: 52px;
-    }
-
     &--area {
       height: 174px;
+      line-height: 20px;
     }
 
     &:hover {
@@ -374,6 +396,18 @@
     &:focus,
     &:invalid {
       padding: 13px 15px;
+    }
+
+    &--text {
+      padding-right: 44px;
+      height: 52px;
+
+      &:active,
+      &:focus,
+      &:hover,
+      &:invalid {
+        padding-right: 44px;
+      }
     }
   }
 

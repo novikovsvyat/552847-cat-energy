@@ -57,7 +57,7 @@
   .contacts {
     position: absolute;
     width: 570px;
-    height: 200px;
+    min-height: 200px;
     top: 95px;
     left: 40px;
     margin-left: calc((100% - 1300px) / 2);

@@ -126,32 +126,39 @@
   &--after:checked ~ .example__list .example__item:nth-child(2) {
     display: block;
   }
-
-  &--before:checked ~ .example__footer .slider .slider__toggle {
-    left: 5px;
-  }
-
-  &--after:checked ~ .example__footer .slider .slider__toggle {
-    left: calc(100% - 40px);
-  }
 }
 
 @media ($tablet-width) {
   .example {
+    position: relative;
     padding-top: 43px;
-    padding-bottom: 68px;
+    padding-bottom: 69px;
     padding-left: 0;
     padding-right: 0;
-    background: linear-gradient(0deg, $gray-bg-clr 43%, $white-bg-clr 43%);
+    background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 462px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-image: linear-gradient(90deg, #f2f2f2 50%, #eaeaea 50%);
+    }
   }
 
   .example__container {
-    padding-left: 30px / 768px * 100%;
-    padding-right: 30px / 768px * 100%;
+    padding: 0;
   }
 
   .example__header {
     padding: 0;
+    padding-left: 30px / 768px * 100%;
+    padding-right: 30px / 768px * 100%;
   }
 
   .example__title {
@@ -213,11 +220,42 @@
   }
 
   .example__list {
-    margin-bottom: 14px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 518px;
+    list-style: none;
+    margin-bottom: 17px;
+  }
+
+  .example__item {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--before {
+      width: 50%;
+      z-index: 2;
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(0deg, #f2f2f2 349px, white 349px);
+      background-repeat: no-repeat repeat;
+      background-size: auto 518px;
+      background-position-x: calc(29vw + 58%), right;
+    }
+
+    &--after {
+      z-index: 1;
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(0deg, #eaeaea 349px, white 349px);
+      background-size: auto 518px;
+      background-position-x: calc(58%);
+    }
   }
 
   .example__image {
-    width: 690px;
+    display: none;
   }
 
   .example__label {
@@ -241,25 +279,32 @@
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .example__toogle {
-    &--before:checked ~ .example__footer .slider .slider__toggle {
-      left: 0;
-    }
-
-    &--after:checked ~ .example__footer .slider .slider__toggle {
-      left: calc(100% - 32px);
-    }
+    z-index: 3;
+    position: relative;
+    margin-bottom: 0;
   }
 }
 
 @media ($desktop-width) {
   .example {
-    padding-top: 43px;
-    padding-left: 0;
-    padding-right: 0;
-    background: linear-gradient(0deg, $gray-bg-clr 72%, $white-bg-clr 72%);
+    padding-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 180px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-image: linear-gradient(90deg, #f2f2f2 calc(50% + 326px), #eaeaea calc(50% + 326px));
+    }
+  }
+
+  .example__header {
+    padding: 0;
   }
 
   .example__container {
@@ -268,15 +313,47 @@
     margin: 0 auto;
     width: 1300px;
     display: flex;
+    padding-bottom: 69px;
   }
 
   .example__wrapper {
     margin-top: -55px;
-    width: 690;
+    width: 690px;
   }
 
   .example__list {
-    margin-bottom: 35px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 518px;
+    list-style: none;
+    margin-bottom: 38px;
+  }
+
+  .example__item {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--before {
+      width: 53%;
+      z-index: 2;
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(0deg, #f2f2f2 326px, white 326px);
+      background-repeat: no-repeat repeat;
+      background-size: auto 518px;
+      background-position-x: 0;
+    }
+
+    &--after {
+      z-index: 1;
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(0deg, #eaeaea 326px, white 326px);
+      background-size: auto 518px;
+      background-position-x: 0;
+    }
   }
 
   .example__footer {
@@ -288,6 +365,7 @@
 
   .example__title {
     margin-bottom: 146px;
+    max-width: 570px;
   }
 
   .example__text {
