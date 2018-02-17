@@ -130,11 +130,25 @@
 
 @media ($tablet-width) {
   .example {
+    position: relative;
     padding-top: 43px;
-    padding-bottom: 0;
+    padding-bottom: 69px;
     padding-left: 0;
     padding-right: 0;
     background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 462px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-image: linear-gradient(90deg,#f2f2f2 50%,#eaeaea 50%);
+    }
   }
 
   .example__container {
@@ -226,8 +240,7 @@
     &--before {
       width: 50%;
       z-index: 2;
-      background-image: url("../img/before-tablet@2x.png"), linear-gradient(0deg, #f2f2f2 67%, #ffffff 67%);
-      box-shadow: 0 113px #f2f2f2;
+      background-image: url("../img/before-tablet@2x.png"), linear-gradient(0deg,#f2f2f2 349px,white 349px);
       background-repeat: no-repeat repeat;
       background-size: auto 518px;
       background-position-x: calc(29vw + 58%), right;
@@ -235,8 +248,7 @@
 
     &--after {
       z-index: 1;
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(0deg, #eaeaea 67%, #ffffff 67%);
-      box-shadow: 0 113px #eaeaea;
+      background-image: url("../img/after-tablet@2x.png"), linear-gradient(0deg,#eaeaea 349px,white 349px);
       background-size: auto 518px;
       background-position-x: calc(58%);
     }
@@ -269,16 +281,24 @@
     padding-right: 0;
     z-index: 3;
     position: relative;
-    margin-bottom: 69px;
+    margin-bottom: 0;
   }
 }
 
 @media ($desktop-width) {
   .example {
-    padding-top: 43px;
-    padding-left: 0;
-    padding-right: 0;
-    background: linear-gradient(0deg, $gray-bg-clr 72%, $white-bg-clr 72%);
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 180px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-image: linear-gradient(90deg,#f2f2f2 calc(50% + 326px),#eaeaea calc(50% + 326px));
+    }
   }
 
   .example__header {
@@ -320,8 +340,7 @@
     &--before {
       width: 53%;
       z-index: 2;
-      background-image: url("../img/before-tablet@2x.png"), linear-gradient(0deg, #f2f2f2 63%, #ffffff 63%);
-      box-shadow: 0 134px #f2f2f2;
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(0deg,#f2f2f2 326px,white 326px);
       background-repeat: no-repeat repeat;
       background-size: auto 518px;
       background-position-x: 0;
@@ -329,8 +348,7 @@
 
     &--after {
       z-index: 1;
-      background-image: url("../img/after-tablet@2x.png"), linear-gradient(0deg, #eaeaea 63%, #ffffff 63%);
-      box-shadow: 0 134px #eaeaea;
+      background-image: url("../img/after-desktop@2x.png"), linear-gradient(0deg,#eaeaea 326px,white 326px);
       background-size: auto 518px;
       background-position-x: 0;
     }
@@ -345,6 +363,7 @@
 
   .example__title {
     margin-bottom: 146px;
+    max-width: 570px;
   }
 
   .example__text {

@@ -38,11 +38,12 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 9px;
+    width: 440px;
   }
 
   .site-list__item {
     border-bottom: none;
-    margin-right: 36px;
+    margin-right: 8%;
     padding: 0;
 
     &:last-child {

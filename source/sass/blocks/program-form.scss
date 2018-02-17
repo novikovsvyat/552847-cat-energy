@@ -185,6 +185,14 @@
 
   &--text {
     height: 45px;
+    padding-right: 44px;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:invalid {
+      padding-right: 44px;
+    }
   }
 
   &--area {
@@ -392,6 +400,17 @@
     &:focus,
     &:invalid {
       padding: 13px 15px;
+    }
+
+    &--text {
+    padding-right: 44px;
+
+      &:active,
+      &:focus,
+      &:hover,
+      &:invalid {
+        padding-right: 44px;
+      }
     }
   }
 
