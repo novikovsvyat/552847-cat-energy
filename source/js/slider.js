@@ -1,7 +1,8 @@
 var separator = document.querySelector('.slider__toggle');
-var originalPhoto = document.querySelector('.example__item--after');
-var filteredPhoto = document.querySelector('.example__item--before');
-var photoContainer = document.querySelector('.example__list');
+var originalPhoto = document.querySelector('.example__item--before');
+var filteredPhoto = document.querySelector('.example__item--after');
+var photoContainer = document.querySelector('.example__wrapper');
+
 var flag = false;
 
 separator.addEventListener('mousedown', function(event) {
@@ -14,10 +15,12 @@ document.addEventListener('mouseup', function(event) {
 }, false);
 
 photoContainer.addEventListener('mousemove', function(event) {
-  var res = event.pageX - this.offsetLeft;
+  var res = event.pageX;
 
-  if (flag && (res > 0) && (res < filteredPhoto.offsetWidth)) {
-    separator.style.left = res + 'px';
+  console.log(res);
+
+  if (flag && (res > (document.body.clientWidth - 428) / 2) && (res < (document.body.clientWidth / 2 + 214))) {
+    separator.style.left = res - (document.body.clientWidth - 538) / 2 + 'px';
     originalPhoto.style.width = res + 'px';
   }
 
