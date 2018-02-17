@@ -287,6 +287,8 @@
 
 @media ($desktop-width) {
   .example {
+    padding-bottom: 0;
+
     &::before {
       content: "";
       position: absolute;
