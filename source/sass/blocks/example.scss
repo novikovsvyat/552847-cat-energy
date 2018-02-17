@@ -288,6 +288,7 @@
 @media ($desktop-width) {
   .example {
     padding-bottom: 0;
+    background: none;
 
     &::before {
       content: "";
